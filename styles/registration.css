@@ -1,0 +1,316 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  /* background: rgb(130, 106, 251); */
+  background : linear-gradient(87deg, #264a87 0, #1a174d 100%);
+}
+
+/* This is My PAssword Validation */
+
+/* This is My End to My PAssword VAlidation */
+/* This is My BAck To HomePage */
+
+.back{
+  width: 60%;
+  background: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+.back i{
+  margin-right: 0.3rem;
+}
+
+.back a{
+  text-decoration: none;
+  color: darkslategray;
+  font-weight: 400;
+}
+
+/* This is My Border Bottom Line */
+.line{
+    width: 120px;
+    height: 2px;
+    background-color: lightgrey;
+    margin: 2% auto;
+}
+
+.line-inner{
+    width: 60px;
+    height: 4px;
+    background-color: red;
+    margin: auto;
+}
+
+/*  */
+
+/* This is My Main Code for Regis Forms */
+#lang{
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  width: fit-content;
+  outline: none;
+  color: darkslategray;
+}
+
+/* This is An End */
+
+.container {
+  position: relative;
+  /* max-width: 700px;
+  width: 100%; */
+  width: 60%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: 10% auto;
+}
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+
+/* This is My Profile Pic Upload */
+.avatar-upload {
+    position: relative;
+    max-width: 205px;
+}
+
+.avatar-upload .avatar-edit {
+    position: absolute;
+    right: 12px;
+    z-index: 1;
+    top: 10px;
+}
+
+.avatar-upload .avatar-edit input {
+    display: none;
+}
+
+.avatar-upload .avatar-edit label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all .2s ease-in-out;
+}
+
+.avatar-upload .avatar-edit label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+}
+
+.avatar-upload .avatar-edit label:after {
+    content: "\f040";
+    font-family: 'FontAwesome';
+    color: #757575;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.avatar-upload .avatar-preview {
+    width: 162px;
+    height: 162px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-upload .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* This is AN End to My Profile Pic Upload */
+
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.form .column .para{
+    line-height: 170px;
+}
+
+.form .column .line{
+    margin: 0;
+    margin-top: -3rem;
+}
+
+h1{
+    color: darkslategray;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.form .gender-box {
+  margin-top: 20px;
+  border: 1px dashed lightslategrey;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .gender {
+  column-gap: 5px;
+}
+.gender input {
+  accent-color: rgb(130, 106, 251);
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: #707070;
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+.form input[type="submit"] {
+  height: 45px;
+  min-width: 50%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(130, 106, 251);
+  border-radius: 5px;
+}
+.form input[type="submit"]:hover {
+  background: rgb(88, 56, 250);
+}
+
+
+.form input[type="checkbox"]{
+    margin: 4px 0 0;
+    line-height: normal;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+/* This is My Reset PAssword */
+#section2{
+  display: none;
+}
+/*  */
+
+/*Responsive*/
+
+@media screen and (max-width: 1024px){
+  body h1{
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  
+  body h1{
+    width: 100%;
+  }
+
+  .back{
+    width: 97%;
+  }
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+
+  .container{
+    width: 97%;
+    margin: 10% auto;
+  }
+
+}
+
+@media screen  and (max-width: 425px){
+ 
+  body h1{
+    font-size: 26px;
+  }
+  .container{
+    width: 97%;
+  }
+}

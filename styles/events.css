@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4fcff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .head{
+    width: 100%;
+    height: fit-content;
+    margin: 5% auto;
+    text-align: center;
+  }
+
+  h1{
+    max-width: 100%;
+    font-size: 26px;
+    margin: 2% auto;
+    text-align: center;
+    color: darkslategray;
+  }
+
+ .head p{
+    margin: auto;
+    max-width: 90%;
+    color: #292929;
+    font-weight: 400;
+  }
+
+  .head a{
+    text-decoration: none;
+    color: tomato;
+    font-weight: 600;
+  }
+
+  .events{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    width: 90%;
+    margin: auto;
+  }
+
+  .events .events-inner{
+    min-width: 20%;
+    border-right: 1px solid lightgrey;
+    margin: 2% 4%;
+    min-height: 300px;
+  }
+
+  #last{
+    border-right: none;
+  }
+
+  .events img{
+    height: 100px;
+    width: 100px;
+  }
+
+  .date{
+    margin-top: -1.7rem;
+    margin-left: 4.2rem;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 3px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #292929;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    font-weight: 600;
+  }
+
+  .events .events-inner h2{
+    font: normal 18px/22px "sans-serif";
+    color: #6cc056;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .events-inner i{
+    
+    margin-bottom: 0rem;
+    margin-right: 0.3rem;
+  }
+
+  .events-inner span{
+    color: darkslategray;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .fa-clock{
+    padding: 7px;
+    background: #26ae611f;
+    color: seagreen;
+  }
+
+  .fa-location-dot{
+    margin-top: 0.3rem;
+    padding: 7px 9px;
+    background: #ae5c261f;
+    color: red;
+  }
+
+  .events-inner button{
+    border: 1px solid #6cc056;
+    background: #6cc056;
+    color: white;
+    margin-top: 1rem;
+    padding: 5px 13px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  /* This is My Overlay Code */
+
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.overlay-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    max-height: 90vh;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    text-align: center;
+}
+
+.overlay-content h3{
+  color: darkslateblue;
+  font-weight: 600;
+  font-size: 18px;
+ 
+  text-align: left;
+  max-width: 95%;
+}
+
+.overlay-content-open{
+  margin: auto;
+  margin-bottom: 2rem;
+  max-width: 95%;
+  text-align: left;
+  color: darkslategray;
+}
+
+.overlay-content p{
+  color: darkslategray;
+  font-size: 16px;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    background: #ae5c261f;
+    color: red;
+    padding: 5px 10px;
+    float: right;
+}
+  /* This is An End To My Overlay Code */
+.para-left img{
+  width: 100%;
+  height: 300px;
+  border-radius: 7px;
+  animation-name: none;
+}
+  /* This Are My Media Queries */
+  @media screen and (max-width: 768px) {
+
+    .head{
+      margin: 20% auto;
+    }
+
+    .events{
+      width: 100%;
+      flex-direction: column;
+      padding: 0px;
+    }
+
+    .events .events-inner{
+      width: 100%;
+      border-right: 0px;
+      justify-content: center;
+      text-align: center;
+      border-bottom: 1px dashed lightslategrey;
+    }
+
+    .date{
+      margin-left: 10rem;
+    }
+  }
+  /* This is An End */

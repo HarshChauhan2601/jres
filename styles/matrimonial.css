@@ -1,0 +1,361 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.search-bg{
+    max-width: 100%;
+    padding: 10px 20px;
+    /* background-image: url("/SANJAY_UNCLE/images/matrimonial2.jpg");
+    background-size: cover;
+     */
+    background: rgb(39,214,197);
+    background: linear-gradient(90deg, rgba(39,214,197,1) 40%, rgba(0,190,240,1) 100%);
+    height: 100vh;
+ }
+
+ .head{
+    min-width: 70%;
+    margin: auto;
+    margin-top: 10em;
+    text-align: center;
+
+}
+
+.head h1{
+    width: fit-content;
+    background-color: white;
+    margin: auto;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.head p{
+    font-weight: 600;
+    background-color: seagreen;
+    width: fit-content;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 7px;
+    color: white;
+}
+
+
+ .search{
+    width: 70%;
+    margin: 5% auto;
+    background: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+   
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ }
+
+ form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ 
+ .input-box{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    min-width: 33%;
+ }
+
+ label{
+    color: darkslategray;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+ }
+
+ label i{
+    border-radius: 50%;
+    background: white;
+    padding: 10px;
+    color: darkslateblue;
+    border: 1px dashed darkslateblue;
+
+}
+
+ input{
+    border-color: rgba(50, 151, 211, .25);
+    position: relative;
+  height: 45px;
+  min-width: 95%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding-left: 10px;
+
+ }
+
+ input[type="submit"]{
+    min-width: 30%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 3.4rem;
+   
+ }
+
+ input[type="submit"]::before{
+    content: "\f007";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+ }
+
+ input[type="submit"]:hover{
+    background: seagreen;
+    transition: 0.5s ease-in-out;
+ }
+
+ /* <!-- This are My Profiles --> */
+.matri-profiles{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background: #f6f4f8;
+
+}
+
+.profile-card{
+    width: 70%;
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    margin: 3% auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 300px;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.profile-card-l{
+    width: 30.5%;
+    height: 300px;
+    border-right: 1px dashed darkslategray;
+    background: #10bbef;
+    border-radius: 5px;
+}
+
+ 
+
+.profile-card-l img{
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+.profile-card-r{
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    /* background: #f4f6f8; */
+    padding: 0px 10px;
+}
+
+.profile-card-r h2{
+    font-size: 26px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed lightslategray;
+}
+
+.profile-card-r .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 1rem;
+    
+}
+
+.profile-card-r .column{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    min-width: 50%;
+}
+
+.profile-card-r .row .column span{
+    margin-bottom: 1rem;
+}
+
+.profile-card-r p{
+    margin-top: 0.5rem;
+    color: darkslategray;
+    font-weight: 400;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+#age::before{
+    content: "\f007";
+    font-family: "Font Awesome 5 Free";
+    margin-right: 0.5rem;
+    font-weight: 600;
+    background: rgb(255, 241, 224);
+    color: tan;
+    border-radius: 2px;
+    padding: 5px 6px;
+}
+
+ 
+
+#work::before{
+    content: "\f0f2";
+    font-family: "Font Awesome 5 Free";
+    margin-right: 0.5rem;
+    font-weight: 600;
+    background: #26ae611f;
+    border-radius: 2px;
+    padding: 5px;
+    color: seagreen;
+}
+
+#mba::before{
+    content: "\f19c";
+    font-family: "Font Awesome 5 Free";
+    margin-right: 0.5rem;
+    font-weight: 600;
+    background: #ae5c261f;
+    color: red;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+#city::before{
+    content: "\f3c5";
+    font-family: "Font Awesome 5 Free";
+    margin-right: 0.5rem;
+    font-weight: 600;
+    background: #0078f050;
+    color: #0077f0;
+    border-radius: 2px;
+    padding: 5px 7px;
+}
+
+
+#bio::before{
+    content: "\f303";
+    font-family: "Font Awesome 5 Free";
+    margin-right: 0.5rem;
+    font-weight: 600;
+    background: rgb(219, 255, 255);
+    color: teal;
+    border-radius: 2px;
+    padding: 5px;
+    margin-right: 0.5rem;
+}
+
+.profile-card-r a{
+    padding: 10px 15px;
+    background: #0077f0;
+    width: fit-content;
+    border-radius: 20px;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    transition: 0.5s ease;
+}
+
+.profile-card-r a::before{
+    content: "\f002";
+    font-family: "Font Awesome 5 Free";
+    margin-right: 0.5rem;
+    font-weight: 600;
+}
+
+.profile-card-r a:hover{
+    background: #262626;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .profile-card{
+        flex-direction: column;
+    }
+
+    .profile-card-l{
+        width: 100%;
+    }
+ 
+
+    .profile-card-r{
+        width: 97%;
+        margin: auto;
+        padding: 0px;
+    }
+}
+
+
+@media screen and (max-width: 930px) {
+    .search{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .search input[type="submit"]{
+        width: 98%;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        margin-left: 0.3rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    h1{
+        font-size: 22px;
+    }
+
+    .head p{
+        font-size: 14px;
+    }
+
+    .search-bg{
+        padding: 0;
+    }
+
+    .search{
+        margin: 5% auto;
+        width: 90%;
+    }
+
+    .input-box{
+        margin: 1rem 0;
+    }
+
+    .profile-card{
+        width: 97%;
+    }
+
+    .profile-card-l{
+        height: fit-content;
+    }
+
+    .profile-card-l img{
+        margin: 0;
+        margin-left: 5rem;
+    }
+
+}

@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Space+Grotesk:wght@500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --Orange: hsl(26, 100%, 55%);
+  --Paleorange: hsl(25, 100%, 94%);
+  --verydark: hsl(220, 13%, 13%);
+  --Darkgrayish: hsl(219, 9%, 45%);
+  --Grayish: hsl(220, 14%, 75%);
+  --Lightgrayish: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
+/* ============================Utality Classes=========================== */
+body {
+  font-family: "Kumbh Sans";
+}
+p {
+  font-size: 1.6rem;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*=========================================================== */
+/*===========================Producat Page========================== */
+/*=========================================================== */
+
+#total_sum{
+  background-color: #f6f4f8; 
+  padding: 10px; border-radius: 8px; 
+  color: darkslateblue; 
+  font-size: 20px;
+}
+#products {
+  margin-top: 15rem;
+  position: relative;
+  width: 100%;
+}
+
+.producat_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: 100%;
+}
+
+.producat_image{
+    width: 40%;
+    margin: auto;
+}
+.producat_image img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  max-height: 90vh;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.company_txt {
+  color: var(--Orange);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+.producat_content {
+  width: 50%;
+}
+.producat_content h2 {
+  font-size: 4rem;
+  margin: 1rem 0;
+  width: 90%;
+}
+.producat_des {
+  margin: 2rem 0;
+  width: 65%;
+  font-size: 1.5rem;
+  line-height: 1.56;
+  color: var(--Darkgrayish);
+}
+.dicscount_price {
+  display: flex;
+  align-items: center;
+}
+.normal_price {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.dicscount_price span {
+  font-weight: normal;
+  font-size: 1.5rem;
+  background-color: #ffeee2;
+  padding: 0 0.5rem;
+  color: var(--Orange);
+  font-weight: 700;
+  margin-left: 1rem;
+}
+.total_price {
+  text-decoration: line-through;
+  color: var(--Grayish);
+  margin: 1rem 0;
+}
+.qty {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btns button {
+  outline: none;
+  border: none;
+  background-color: var(--Lightgrayish);
+  color: var(--Orange);
+  padding: 0.7rem 1.2rem;
+  font-size: 2rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+.btns button:active {
+  transform: scale(0.98);
+}
+.btns .qty_numbers {
+  color: var(--Darkgrayish);
+  font-weight: 600;
+}
+.add_cart {
+  outline: none;
+  border: none;
+  background-color: var(--Orange);
+  font-family: inherit;
+  color: var(--White);
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10% 0;
+  width: 50%;
+}
+.add_cart:active {
+  transform: scale(0.98);
+}
+.add_cart svg {
+  margin-right: 1rem;
+}
+
+/*=========================================================== */
+/*===========================Modal========================== */
+/*=========================================================== */
+.modal {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.modal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal_wrapper {
+  width: 450px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.img_thumbnail_modal img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.img_small_modal {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.img_small_modal img {
+  object-fit: cover;
+  width: 100px;
+}
+.img_small_modal img.active {
+  border: 2px solid var(--Orange);
+  opacity: 0.7;
+}
+.close_icon {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  cursor: pointer;
+}
+.img_thumbnail_modal .next img,
+.prev img {
+  object-fit: cover;
+  width: 10px;
+}
+.img_thumbnail_modal .next {
+  position: absolute;
+  right: -45px;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  background-color: var(--White);
+  border-radius: 50%;
+  padding: 1rem;
+}
+.img_thumbnail_modal .prev {
+  position: absolute;
+  left: -15px;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  background-color: var(--White);
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+
+/* This is My Form */
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group input[readonly] {
+  background-color: #e9e9e9;
+}
+
+.form-group input[type="button"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form-group input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+/* This is An end to My Form */
+
+@media screen and (max-width: 768px) {
+    .producat_wrapper{
+        flex-direction: column;
+    }
+    .producat_image{
+        width: 100%;
+    }
+
+    .producat_content{
+        width: 100%;
+    }
+}
